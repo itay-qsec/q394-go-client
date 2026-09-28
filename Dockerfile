@@ -1,4 +1,4 @@
-FROM golang:1.24.5 AS build
+FROM golang:1.22.5 AS build
 WORKDIR /src
 COPY . .
 RUN CGO_ENABLED=0 go build -o /q394-client .
